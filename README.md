@@ -1,7 +1,7 @@
 # hackathon-microservice-traceability
 Its a hackathon pitch idea to have traceability implemented for microservices , using Spring boot, spring cloud, sleuth and zipkin
 
-URLs ( To be executed in same sequence ):
+URLs ( Services/servers to be bounced in same sequence ):
 	
 	1. Eureka Naming server : http://localhost:8761/
 	2. currency-exchange : http://localhost:8000/currency-exchange/from/USD/to/INR
