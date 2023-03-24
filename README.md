@@ -22,3 +22,20 @@ Below two URLs are the demostration of centralised configuration in cloud server
 	
 	5. Spring cloud config server : http://localhost:8888	
 	6. limits-service : http://localhost:8081/limits
+	
+In order to work with docker and docker compose 
+	1. Make sure you have docker and docker compose installed on your linux/windows/mac box.
+	2. Each service pom.xml need to be modified to have your docker.in userName, current it has my docker account user name .
+		Reference :
+			
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>loki007007/traceability-${project.artifactId}:${project.version}</name>
+						<pullPolicy>IF_NOT_PRESENT</pullPolicy>
+					</image>
+				</configuration>
+			</plugin>
+	3. The same name(s) are to be updated in docker-compose.yaml file , in case you are trying to bounce all the component using docker compose .
