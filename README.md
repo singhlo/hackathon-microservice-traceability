@@ -23,7 +23,8 @@ Below two URLs are the demostration of centralised configuration in cloud server
 	5. Spring cloud config server : http://localhost:8888	
 	6. limits-service : http://localhost:8081/limits
 	
-In order to work with docker and docker compose 
+In order to work with docker and docker compose :
+
 	1. Make sure you have docker and docker compose installed on your linux/windows/mac box.
 	2. Each service pom.xml need to be modified to have your docker.in userName, current it has my docker account user name .
 		Reference :
