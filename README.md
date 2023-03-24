@@ -10,6 +10,9 @@ In order to see the traceability on zipkin
 		Currency Conversion
 		API-Gateway
 	3. Hit the Eureka URL and ensure that all others are registered with Naming Server ( Eureka)
+	4. Hit the API gateway URL.
+	5. Access Zipkin server ( http://localhost:9411)
+	6. Click on Run Query button to see the traces of API Gateway -> Currency-Conversion -> Currency-Exchange
 
 Important URLs :
 	
